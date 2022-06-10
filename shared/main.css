@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root{
+    --primary-color: #6F9B88;
+    --accent-color: #D38237;
+    --text-color: #391E01;
+    --alternative-color: #391E01;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  background-image: url("../images/main-seed-banner.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.main .main__content {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar-logo{
+    width: 50px;
+}
+
+.custom_background{
+    background-color: var(--primary-color);
+
+}
+
+.about {
+  padding: 4rem 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.btn-primary{
+    background-color: var(--accent-color)!important;
+    border: none!important;
+}
+
+.btn-se{
+    background-color: var(--accent-color)!important;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

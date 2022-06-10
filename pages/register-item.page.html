@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seed</title>
+    <link rel="stylesheet" href="../shared/main.css" />
+    <link rel="stylesheet" href="../shared/bootstrap.min.css" />
+  </head>
+  <body id="topo">
+    <nav class="navbar navbar-expand-lg custom_background fixed-top">
+      <div class="container">
+        <img class="navbar-logo" src="../images/logo.png" />
+        <a class="navbar-brand" href="#topo">Seed</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" title="Home" href="./home.page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Home" href="./register.page.html"
+                >Cadastrar</a
+              >
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" title="Home" href="./register-item.page.html"
+                  >Produto</a
+                >
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Home" href="./login.page.html"
+                >Logout</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <aside
+      class="container-fluid custom_background mt-5 pt-5 pb-5"
+      id="cadastro"
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <h3 class="text-white">Cadastrar Produto</h3>
+          </div>
+
+          <div class="col-8">
+            <form action="">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nome-item"
+                  placeholder="nome do produto"
+                />
+                <label for="floatingInputGrid">Nome</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="quantidade-item"
+                  placeholder="Quantidade"
+                />
+                <label for="floatingInputGrid">Quantidade</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="tipo-item"
+                  placeholder="Tipo"
+                />
+                <label for="floatingInputGrid">Tipo</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="status-item"
+                  placeholder="Status"
+                />
+                <label for="floatingInputGrid">Status</label>
+              </div>
+
+              <button type="button" class="btn btn-primary w-100" onclick="postItem(event)">
+                Cadastrar Produto
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-boxes"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
+            />
+          </svg>
+          <small class="d-block mb-3 text-muted">© 2017–2022</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Seed</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#"
+                >www.seed.com.br</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#"
+                >Vitor Campos</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#"
+                >RM 87229</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../core/js/main..js"></script>
+    <script src="../core/vendor/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

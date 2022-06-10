@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seed</title>
+    <link rel="stylesheet" href="../shared/main.css"/>
+    <link rel="stylesheet" href="../shared/bootstrap.min.css"/>
+  </head>
+  <body id="topo">
+    <nav class="navbar navbar-expand-lg custom_background fixed-top">
+      <div class="container">
+        <img class="navbar-logo" src="../images/logo.png">
+        <a class="navbar-brand" href="#topo">Seed</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" title="Home" href="#topo">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Home" href="./register.page.html">Cadastrar</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" title="Home" href="./register-item.page.html"
+                  >Produto</a
+                >
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" title="Home" href="./login.page.html"
+                >Logout</a >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container-fluid">
+      <div class="row">
+        <div class="col vh-100 main">
+          <div class="main__content">
+            <h1>Seed App</h1>
+                <p>O melhor ajudante da sua produção</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="container about" id="sobre">
+      <div class="row align-items-center">
+        <div class="col about__image">
+          <img src="../images/about-us.jpg" class="img-fluid" alt="" />
+        </div>
+
+        <div class="col about__content">
+          <h3>Sobre nós</h3>
+          <p>
+            Nosso ajudamos os pequenos agricultores a terem um melhor 
+            controle de seus produtos com um facil gerencimento e dados
+            salvos em nuvem, podendo ser compartilhados e editados de
+            qualquer lugar nas palmas de suas mãos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="valores">
+      <div class="p-3 pb-md-4 mx-auto text-center">
+        <h3>Preços</h3>
+        <p>
+          Aqui esta um pouco do que nós disponibilizamos em nossas plataformas
+        </p>
+      </div>
+
+      <div class="row text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Basic</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title mt-3 mb-4">
+                R$ 50,00<small class="text-muted fw-light">/mês</small>
+              </h1>
+              <button type="button" class="w-100 btn btn-lg btn-primary" onclick="goToRegister()">
+                Assinar
+              </button>
+            </div>
+          </div>
+        </div> 
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Pro</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title mt-3 mb-4">
+                $150.00<small class="text-muted fw-light">/mês</small>
+              </h1>
+
+              <button type="button" class="w-100 btn btn-lg btn-primary" onclick="goToRegister()">
+                Assinar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="mt-4 pt-4 text-center" id="planos">Comparar os Planos</h3>
+
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 56%"></th>
+              <th style="width: 22%">Basic</th>
+              <th style="width: 22%">Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Gerencimento de produtos</th>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Programa de benefícos</th>
+              <td></td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Armazenamento em nuvem</th>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Compartilhamento ilimitado</th>
+              <td></td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Multiplos devices</th>
+              <td></td>
+              <td>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check2"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Assistencia 24 horas</th>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-boxes"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z"
+            />
+          </svg>
+          <small class="d-block mb-3 text-muted">© 2017–2022</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Seed</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#">www.seed.com.br</a>
+            </li>
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#">Vitor Campos</a>
+            </li>
+            <li class="mb-1">
+              <a class="link-secondary text-decoration-none" href="#">RM 87229</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../core/js/main..js"></script>
+    <script src="../core/vendor/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
